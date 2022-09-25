@@ -1,0 +1,5 @@
+To meaure whether mutation tests are actually efficient. PIT test.
+
+In simple terms if unit test fails, mutation test succeds and vice versa.
+
+It will give a html based report

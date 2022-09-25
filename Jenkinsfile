@@ -28,7 +28,20 @@ pipeline {
 			sh 'docker build -t 741042553/numeric-app:""$GIT_COMMIT"" .'
 			sh 'docker push 741042553/numeric-app:""$GIT_COMMIT""'
 			}
-		}
-	       }
+		}  
 	}
+
+	stage("Mutation Tests - PIT") {
+	    steps {
+	        sh "mvn org.pitest:pitest-maven:mutationCoverage"
+		}
+	     post {
+	         always {
+		     pitmutation mutationStatusFile: '**/target/pit-reports/**/mutations.xml'
+		     }
+		  }
+         }
+	}
+       }
 }
+
