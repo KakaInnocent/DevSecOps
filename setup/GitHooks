@@ -1,0 +1,9 @@
+Remember the sto
+
+GitHooks, are scripts that run automatically whenever an incident occurs in a git repository. It works on pure regex to prevent 
+
+Talisman installes a hook to your repository to ensure potential secrets or sensitive information do not leave the developer's workstation
+
+Global Installation -->
+
+Or single on one repository. Check the documenation on gitub.
