@@ -4,4 +4,8 @@ JaCoCo is an actively developed line coverage tool that i used to meaure how man
 
 
 Running unit test cases using Jenkins.
-JUnit tests
+JUnit tests using mvn test
+
+NoW THE Test might run successfully however we do not know the number of lines that have been tested and thus jacoco comes in handy
+
+We need to add the jacoco plugin to the pom.xml file
