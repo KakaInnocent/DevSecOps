@@ -41,6 +41,13 @@ pipeline {
 		     }
 		  }
          }
+	
 	}
-       }
+
+	stage('SonarQube - SAST'){
+		steps {
+			sh "mvn sonar:sonar -Dsonar.projectKey=numeric-application Dsonar.host.url=http://mambo-ops.eastus.cloudapp.azure.com/ -Dsonar.login={REPLACE_ME}"
+		}
+	}
+}
 
