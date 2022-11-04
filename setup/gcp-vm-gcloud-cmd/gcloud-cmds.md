@@ -4,7 +4,7 @@
 gcloud config set compute/zone us-central1-a
 ```
 
-# Create ALLOW ALL Ingress Rule
+# Create ALLOW ALL Ingress Rule -- Ingress traffic is traffic into GCP
 ```
 gcloud compute firewall-rules create allow-all \
 		--direction=INGRESS \
