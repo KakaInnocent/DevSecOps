@@ -3,6 +3,7 @@
 ## Fork and Clone this Repo
 
 ## Clone to Desktop and VM
+A VM is a virtual machine like 
 
 ## NodeJS Microservice - Docker Image -
 `docker run -p 8787:5000 siddharth67/node-service:v1`
