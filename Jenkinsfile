@@ -8,7 +8,7 @@ pipeline {
               archive 'target/*.jar' //so that they can be downloaded later
             }
         }
-	//Adding a test case stage with jacoco line counting 
+	//Adding a test case stage with jacoco line counting jacoco plugin added
 	stage('Unit Test') {
 	steps {
 		sh "mvn test"
